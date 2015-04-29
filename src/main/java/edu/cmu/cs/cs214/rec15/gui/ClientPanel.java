@@ -198,6 +198,9 @@ public class ClientPanel extends JPanel implements ClientChangeListener {
      */
     @Override
     public void messageReceived(Message msg) {
+    	
+    	
+    	// This is what we need to modify.
         String newText = String.format(" %s: %s%n", msg.getSender(),
                 msg.getContent());
         this.chatArea.append(newText);
